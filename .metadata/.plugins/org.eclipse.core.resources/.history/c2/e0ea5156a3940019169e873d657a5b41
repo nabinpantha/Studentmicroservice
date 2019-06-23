@@ -1,0 +1,10 @@
+package edu.myschool.project.student.bussiness.service;
+
+import edu.myschool.project.student.pojo.Student;
+
+public interface StudentService {
+	
+	Student getFisrtStudent();
+	
+
+}

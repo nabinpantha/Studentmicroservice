@@ -1,0 +1,17 @@
+package edu.application.project.university.bussiness.logic;
+
+import java.util.List;
+
+import edu.application.project.university.universitypojo.University;
+
+public interface UniversityLogic {
+	
+	University getFirstUniverity();
+	
+	University getUniverityById();
+	
+	List<University> getAllUniversity();
+	University getUniversityByCity();
+	University getUniversityByCollege();
+	}
+

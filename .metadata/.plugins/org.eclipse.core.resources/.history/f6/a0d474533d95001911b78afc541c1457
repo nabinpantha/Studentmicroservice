@@ -1,0 +1,42 @@
+package edu.application.project.university.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.application.project.university.universitypojo.Address;
+import edu.application.project.university.universitypojo.University;
+
+public class Function {
+	
+	public static List<University> createUniversityList(){
+		
+		
+		List <University> UniversityList = new ArrayList<>();
+		
+		List <Address> addressList = new ArrayList<>();
+		
+		University university1 = new University();
+		
+		university1.setId(1);
+		university1.setUniverityName("Mehersi");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		return UniversityList;
+	}
+	}
+
+

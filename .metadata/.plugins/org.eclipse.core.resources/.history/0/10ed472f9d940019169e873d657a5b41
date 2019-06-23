@@ -1,0 +1,5 @@
+package edu.myschool.project.student.pojo;
+
+public class Course {
+
+}

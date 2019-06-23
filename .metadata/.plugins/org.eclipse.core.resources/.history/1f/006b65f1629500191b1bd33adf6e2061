@@ -1,0 +1,29 @@
+package edu.application.project.university.bussiness.logicimpl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.application.project.university.bussiness.logic.UniversityLogic;
+import edu.application.project.university.universitypojo.University;
+import edu.application.project.university.util.TestData;
+
+@Service
+public class UniversityLogicImpl implements UniversityLogic {
+
+	@Override
+	public University getFirstUniverity() {
+		
+		List <University> myUniversityList = new ArrayList<>();
+		
+		myUniversityList = TestData.createUniversityList();				
+		
+		return myUniversityList.get(0);
+	}
+
+	@Override
+	public University getUniverityById() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,53 @@
+package edu.application.project.university.resource;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.application.project.university.bussiness.logic.UniversityLogic;
+import edu.application.project.university.universitypojo.University;
+import edu.application.project.university.util.TestData;
+
+
+@RestController
+@RequestMapping("university")
+
+public class UniversityResource {
+	
+	@Autowired
+	private UniversityLogic universityLogic;
+
+	
+	@RequestMapping("getFirstUniversity")
+	public University getFirstUniversity() {
+		
+		University university = universityLogic.getFirstUniverity();
+		
+		return university;
+	}
+	
+	@RequestMapping("getAllUniversity")
+	public List <University> getAllUniverrsity(){
+		
+		List <University> allUniversity = universityLogic.getAllUniversity();
+		
+		return allUniversity;
+		
+		
+	
+	}
+	
+	
+	public List<University> getUniversityByCity(@RequestParam("city") String city){
+		
+	}
+	
+	
+	
+	
+}

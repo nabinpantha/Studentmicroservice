@@ -1,0 +1,5 @@
+package edu.myschool.project.student.bussiness.service.impl;
+
+public class StudentServiceImpl {
+
+}
